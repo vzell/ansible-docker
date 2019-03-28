@@ -107,7 +107,7 @@
 - name: Configure Docker daemon options (flags)
   template:
     src: "etc/systemd/system/docker.service.d/options.conf.j2"
-    dest: "/etc/systemd/system/docker.service.d/options.conf"
+    dest: "/etc/systemd/system/docker.service.d/10-machine.conf"
     owner: "root"
     group: "root"
     mode: "0644"
